@@ -59,10 +59,8 @@ export default function HomePage() {
           <thead className="bg-gray-200 dark:bg-gray-800 sticky top-0 z-10">
             <tr>
               <th className="p-3 border">ID</th>
-              <th className="p-3 border">pH</th>
               <th className="p-3 border">Suhu (°C)</th>
               <th className="p-3 border">TDS (ppm)</th>
-              <th className="p-3 border">Kekeruhan (NTU)</th>
               <th className="p-3 border">Waktu</th>
             </tr>
           </thead>
@@ -76,10 +74,8 @@ export default function HomePage() {
             ) : latestData ? (
               <tr className="bg-gray-100 dark:bg-gray-900">
                 <td className="p-3 border">{latestData.id}</td>
-                <td className="p-3 border">{latestData.ph}</td>
                 <td className="p-3 border">{latestData.suhu}</td>
                 <td className="p-3 border">{latestData.tds}</td>
-                <td className="p-3 border">{latestData.kekeruhan}</td>
                 <td className="p-3 border">
                   {new Date(latestData.created_at).toLocaleString()}
                 </td>
@@ -101,33 +97,23 @@ export default function HomePage() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <div className="flex flex-col items-center">
             <Image
-              src="/univ.png"
-              alt="Logo Universitas"
-              width={100}
-              height={100}
-              className="rounded-lg"
-            />
-            <p className="mt-2 text-sm">Universitas</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/author1.png"
+              src="/roz.jpg"
               alt="Author 1"
               width={100}
               height={100}
               className="rounded-full"
             />
-            <p className="mt-2 text-sm">Pencipta 1</p>
+            <p className="mt-2 text-sm">AKHMAD FAKHRURROZI</p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/author2.png"
+              src="/tok.jpg"
               alt="Author 2"
               width={100}
               height={100}
               className="rounded-full"
             />
-            <p className="mt-2 text-sm">Pencipta 2</p>
+            <p className="mt-2 text-sm">TOTOK SARWI AMIYANTO</p>
           </div>
         </div>
       </div>
